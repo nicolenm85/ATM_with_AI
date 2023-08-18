@@ -8,6 +8,34 @@ def main():
 
     available_podcast_info = create_dict_from_json_files('.')
 
+    # Add more podcast entries to the available_podcast_info dictionary
+    available_podcast_info['Podcast Name 1'] = {
+        'podcast_details': {
+            'podcast_title': 'Podcast Title 1',
+            'episode_title': 'Episode Title 1',
+            'episode_image': 'image_url_1'
+        },
+        'podcast_summary': 'Summary for Podcast 1',
+        'podcast_guest': {
+            'name': 'Guest Name 1',
+            'summary': 'Guest Summary 1'
+        },
+        'podcast_highlights': 'Key moment 1\nKey moment 2\n...'
+    }
+
+    available_podcast_info['Podcast Name 2'] = {
+        'podcast_details': {
+            'podcast_title': 'Podcast Title 2',
+            'episode_title': 'Episode Title 2',
+            'episode_image': 'image_url_2'
+        },
+        'podcast_summary': 'Summary for Podcast 2',
+        'podcast_guest': {
+            'name': 'Guest Name 2',
+            'summary': 'Guest Summary 2'
+        },
+        'podcast_highlights': 'Key moment 1\nKey moment 2\n...'
+    }
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
 
