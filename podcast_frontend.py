@@ -7,7 +7,7 @@ def main():
     st.title("Newsletter Dashboard")
 
     available_podcast_info = create_dict_from_json_files('.')
-    set_page_background_color('#d0f0c0')
+    
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
